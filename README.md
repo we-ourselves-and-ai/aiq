@@ -1,1 +1,1 @@
-# aiq
+# monorepo for ai pet 
