@@ -1,2 +1,2 @@
-export { Button } from './Button/Button.js';
+export { Typography } from './Typography/Typography.js';
 //# sourceMappingURL=index.js.map
