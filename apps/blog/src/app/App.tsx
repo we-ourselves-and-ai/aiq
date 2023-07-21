@@ -1,34 +1,22 @@
-import reactLogo from '../assets/react.svg';
-import viteLogo from '/vite.svg';
 import './styles/App.css';
-import { Typography } from '@aiq/uikit';
-import { atom, useAtom } from '@dacorm/dotai';
-
-const value = atom(0);
+import { $router } from '../shared/router';
+import { useAtomValue } from '@dacorm/dotai';
+import { Profile } from '../features/counter';
+import { openPage } from '@dacorm/dotai-router';
 
 function App() {
-  const [count, setCount] = useAtom(value);
+  const page = useAtomValue($router);
 
-  return (
-    <>
+  if (page === '/') {
+    return (
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        main route
+        <button onClick={() => openPage($router, 'profile', null)}></button>
       </div>
-      <Typography>Vite + React</Typography>
-      <div className="card">
-        <button onClick={() => setCount(count + 1)}>count is {count}</button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
-    </>
-  );
+    );
+  } else if (page === '/profile') {
+    return <Profile />;
+  }
 }
 
 export default App;
