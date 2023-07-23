@@ -1,4 +1,4 @@
-import { useTheme } from '../../../app/providers/themeContext';
+import { useTheme } from '../../../domain/theme';
 
 export const ThemeChanger = () => {
   const { toggleTheme } = useTheme();
