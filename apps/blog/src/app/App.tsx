@@ -1,22 +1,28 @@
 import './styles/App.css';
-import { $router } from '../shared/router';
-import { useAtomValue } from '@dacorm/dotai';
-import { Profile } from '../features/counter';
-import { openPage } from '@dacorm/dotai-router';
+import { Routes } from '../features/routes';
+import { ThemeProvider } from './providers/themeContext';
+import {
+  LOCALSTORAGE_THEME_KEY,
+  Themes,
+} from './providers/themeContext/model/themeContext.types.ts';
+
+// 1 app
+// 2 pages
+// 3 widgets
+// 4 features / no cross imports
+// 5 shared // classNames
+// нижестоящие слои не могут импортировать вышестоящие
 
 function App() {
-  const page = useAtomValue($router);
+  const themeFromStorage = localStorage.getItem(LOCALSTORAGE_THEME_KEY);
 
-  if (page === '/') {
-    return (
-      <div>
-        main route
-        <button onClick={() => openPage($router, 'profile', null)}></button>
-      </div>
-    );
-  } else if (page === '/profile') {
-    return <Profile />;
-  }
+  return (
+    <ThemeProvider
+      initialTheme={(themeFromStorage || Themes.dark) as keyof typeof Themes}
+    >
+      <Routes />
+    </ThemeProvider>
+  );
 }
 
 export default App;

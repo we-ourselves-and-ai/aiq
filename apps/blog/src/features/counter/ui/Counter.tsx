@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { atom, useAtom } from '@dacorm/dotai';
-import reactLogo from '../../../assets/react.svg';
+import reactLogo from '../../../shared/assets/react.svg';
 import { Typography } from '@aiq/uikit';
 
 interface CounterProps {}
