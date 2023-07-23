@@ -1,4 +1,4 @@
-import { LOCALSTORAGE_THEME_KEY, Themes } from './model/themeContext.types.ts';
+import { LOCALSTORAGE_THEME_KEY, Themes } from './model/theme.types.ts';
 import { useAtom } from '@dacorm/dotai';
 import { $theme } from './theme.ts';
 import { LocalStorage } from '../../shared/services/Storage.ts';
