@@ -1,3 +1,14 @@
 .app_light_theme {
     --background-default: #EDF0F6;
+    --primary-main: #6A73C2;
+    --primary-light: #9496D4;
+    --primary-contrastText: #FFFFFF;
+    --background-paper: #FFFFFF;
+    --background-paperLight: #F8F9FF;
+    --text-primary: #000000;
+    --text-secondary: rgba(0, 0, 0, 0.66);
+    --error-main: #C75A5A;
+    --success-main: #5AC765;
+    --divider: rgba(0, 0, 0, 0.16);
+    --accent: rgba(97, 108, 145, 0.15);
 }
