@@ -1,3 +1,14 @@
 .app_dark_theme {
     --background-default: #1F2438;
+    --primary-main: #3B4492;
+    --primary-light: #6265A6;
+    --primary-contrastText: #FFFFFF;
+    --background-paper: #2E3655;
+    --background-paperLight: #3B4365;
+    --text-primary: #FFFFFF;
+    --text-secondary: rgba(255, 255, 255, 0.66);
+    --error-main: #C75A5A;
+    --success-main: #5AC765;
+    --divider: rgba(255, 255, 255, 0.16);
+    --accent: rgba(255, 255, 255, 0.08);
 }
