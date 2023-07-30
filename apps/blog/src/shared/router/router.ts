@@ -4,6 +4,8 @@ export const $router = createRouter(
   {
     home: '/',
     profile: '/profile',
+    login: '/signin',
+    register: '/signup',
   },
   window.history,
 );
