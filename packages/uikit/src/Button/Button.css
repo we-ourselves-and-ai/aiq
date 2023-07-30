@@ -1,3 +1,19 @@
 .aiq__button {
-    color: red;
+    color: var(--primary-contrastText);
+    background-color: var(--primary-main);
+}
+
+.aiq__button_small {
+    padding: 7px 15px;
+    min-height: 30px;
+}
+
+.aiq__button_medium {
+    padding: 8px 20px;
+    min-height: 38px;
+}
+
+.aiq__button_large {
+    padding: 10px 25px;
+    min-height: 44px;
 }

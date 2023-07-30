@@ -8,9 +8,9 @@ export const Button: FC<PropsWithChildren<ButtonProps>> = ({
   ...rest
 }) => {
   const classes: Classes = {
-    small: 'aiq__button aiq__small__button',
-    medium: 'aiq__button aiq__medium__button',
-    large: 'aiq__button aiq__large__button',
+    small: 'aiq__button aiq__button_small',
+    medium: 'aiq__button aiq__button_medium',
+    large: 'aiq__button aiq__button_large',
   };
 
   return (

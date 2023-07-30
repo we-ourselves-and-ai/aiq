@@ -6,6 +6,7 @@ export default {
     'src/index.ts',
     'src/Typography/index.ts',
     'src/Button/index.ts',
+    'src/Input/index.ts',
     // other component from src TODO: later make function,
   ],
   output: {
