@@ -1,0 +1,8 @@
+.blog__link {
+    cursor: pointer;
+    color: var(--primary-light);
+}
+
+.blog__link:hover {
+    text-decoration: underline;
+}
