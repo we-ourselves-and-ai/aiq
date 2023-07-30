@@ -2,7 +2,8 @@
   "name": "@aiq/uikit",
   "version": "1.0.0",
   "description": "",
-  "main": "lib/index.js",
+  "main": "lib/packages/uikit/src/index.js",
+  "types": "lib/index.d.ts",
   "type": "module",
   "scripts": {
     "build": "rollup -c",
@@ -20,5 +21,8 @@
     "rollup": "^3.26.3",
     "rollup-plugin-typescript2": "^0.35.0",
     "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "rollup-plugin-postcss": "^4.0.2"
   }
 }
