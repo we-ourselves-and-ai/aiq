@@ -8,6 +8,6 @@ export const Main: FC<MainProps> = () => (
         main route
         <Link to={'profile'}>go to profile</Link>
         <Link to={'login'}>go to login</Link>
-        <ThemeChanger/>
+        <ThemeChanger />
     </div>
 );
