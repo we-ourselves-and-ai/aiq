@@ -3,4 +3,5 @@ export interface CardProps {
   title: string;
   description: string;
   name: string;
+  onClick: () => void;
 }

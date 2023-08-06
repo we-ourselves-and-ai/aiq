@@ -1,0 +1,16 @@
+.blog__post-container {
+    width: 822px;
+    height: 100%;
+    margin: auto;
+    background-color: var(--background-paper);
+    border-radius: 10px;
+    padding: 30px 30px 20px 30px;
+    text-align: left;
+}
+
+.blog__post-wrapper {
+    display: flex;
+    margin-top: 8px;
+    align-items: center;
+    gap: 8px;
+}
