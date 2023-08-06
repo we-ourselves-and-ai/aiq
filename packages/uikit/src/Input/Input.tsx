@@ -1,11 +1,31 @@
 import { FC } from 'react';
 import { InputProps } from './Input.types';
+import './Input.css';
+import SearchIcon from './search.svg';
 
-export const Input: FC<InputProps> = ({ labelText, ...rest }) => {
+export const Input: FC<InputProps> = ({
+  withLabel = false,
+  labelText,
+  placeholder,
+  ...rest
+}) => {
+  if (withLabel) {
+    return (
+      <div className="aiq__input-wrapper">
+        <SearchIcon />
+        <input
+          placeholder={placeholder}
+          className="aiq__input_with-label"
+          {...rest}
+        ></input>
+      </div>
+    );
+  }
+
   return (
-    <fieldset>
-      <legend>{labelText || ''}</legend>
-      <input {...rest}></input>
+    <fieldset className="aiq__fieldset">
+      <legend className="aiq__legend">{labelText || ''}</legend>
+      <input placeholder={placeholder} className="aiq__input" {...rest}></input>
     </fieldset>
   );
 };

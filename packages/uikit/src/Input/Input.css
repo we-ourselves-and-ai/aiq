@@ -1,0 +1,42 @@
+.aiq__input {
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.aiq__fieldset {
+    border-radius: 4px;
+    border: 1px solid #79747E;
+}
+
+.aiq__legend {
+    color: #79747E;
+}
+
+.aiq__input:focus {
+    outline: none;
+}
+
+.aiq__legend {
+    text-align: left;
+}
+
+.aiq__input_with-label {
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    height: 100%;
+    padding: 6px 8px;
+    outline: none;
+}
+
+.aiq__input-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: var(--background-paper);
+    padding-left: 16px;
+    height: 40px;
+    border-radius: 4px;
+}
