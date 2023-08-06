@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-size: 20px;
+    color: var(--text-primary);
 }
 
 .aiq__fieldset {
@@ -30,6 +31,7 @@
     height: 100%;
     padding: 6px 8px;
     outline: none;
+    color: var(--text-primary);
 }
 
 .aiq__input-wrapper {
