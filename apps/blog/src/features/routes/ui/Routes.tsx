@@ -4,8 +4,6 @@ import { Profile } from '../../../pages/Profile';
 import { Login } from '../../../pages/Login';
 import { Main } from '../../../pages/Main';
 
-// TODO: Вынести каждый компонент отдельно в pages
-
 export const Routes = () => {
   const page = useAtomValue($router);
 

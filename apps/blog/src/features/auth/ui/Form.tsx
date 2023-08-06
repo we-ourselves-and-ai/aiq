@@ -5,7 +5,7 @@ import { Input } from '@aiq/uikit';
 export const Form: FC<FormProps> = () => {
   return (
     <div>
-      <Input labelText="label" />
+      <Input withLabel placeholder="input" labelText="label" />
     </div>
   );
 };
