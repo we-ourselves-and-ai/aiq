@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { PostsListProps, PostType } from '../model/posts.types.ts';
+import { PostsListProps } from '../model/posts.types.ts';
 import { useAtomValue } from '@dacorm/dotai';
 import { $posts } from '../model/postsStore.ts';
 import { Card } from '@aiq/uikit';
@@ -11,7 +11,7 @@ export const PostsList: FC<PostsListProps> = () => {
   return (
     <div className="blog__posts-wrapper">
       {posts &&
-        (posts as unknown as PostType[]).map(post => (
+        posts.map(post => (
           <Card
             key={post.title}
             imageLink={post.image}
