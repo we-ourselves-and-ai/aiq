@@ -1,6 +1,7 @@
 .aiq__button {
     color: var(--primary-contrastText);
     background-color: var(--primary-main);
+    border-radius: 4px;
 }
 
 .aiq__button_small {

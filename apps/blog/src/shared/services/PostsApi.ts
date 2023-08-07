@@ -9,3 +9,18 @@ export function fetchPosts() {
 export function fetchPost(id: string) {
   return makeRequest<PostType[]>(`${POSTS_API_URL}/${id}`);
 }
+
+export function createPost(title: string, image: string, text: string, userName: string) {
+  return makeRequest<PostType>(POSTS_API_URL, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      title,
+      image,
+      text,
+      userName,
+    }),
+  });
+}

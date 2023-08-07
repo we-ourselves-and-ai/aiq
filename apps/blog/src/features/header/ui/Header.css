@@ -1,0 +1,9 @@
+.blog__header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog__header-text {
+    color: var(--text-primary);
+}

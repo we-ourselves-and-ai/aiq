@@ -9,6 +9,7 @@ export default {
     'src/Button/index.ts',
     'src/Input/index.ts',
     'src/Card/index.ts',
+    'src/Popup/index.ts',
     // other component from src TODO: later make function,
   ],
   output: {

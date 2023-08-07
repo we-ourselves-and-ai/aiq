@@ -5,6 +5,7 @@ import SearchIcon from './search.svg';
 
 export const Input: FC<InputProps> = ({
   withLabel = false,
+  showIcon = true,
   labelText,
   placeholder,
   ...rest
@@ -12,7 +13,7 @@ export const Input: FC<InputProps> = ({
   if (withLabel) {
     return (
       <div className="aiq__input-wrapper">
-        <SearchIcon />
+        {showIcon && <SearchIcon />}
         <input
           placeholder={placeholder}
           className="aiq__input_with-label"
