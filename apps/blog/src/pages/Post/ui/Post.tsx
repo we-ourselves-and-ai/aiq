@@ -20,11 +20,11 @@ export const Post: FC<PostProps> = ({}) => {
       </Button>
       <div className="blog__post-wrapper">
         <img src={Avatar} alt="аватарка пользователя" />
-        <p>{post.userName}</p>
+        <p className="blog__post-text">{post.userName}</p>
       </div>
-      <h1>{post.title}</h1>
-      <p>{formatDate(post.createdAt)}</p>
-      <p>{post.text}</p>
+      <h1 className="blog__post-text">{post.title}</h1>
+      <p className="blog__post-text">{formatDate(post.createdAt)}</p>
+      <p className="blog__post-text">{post.text}</p>
     </div>
   );
 };

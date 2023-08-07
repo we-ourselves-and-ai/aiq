@@ -19,7 +19,7 @@ export const PostsList: FC<PostsListProps> = () => {
             key={post.title}
             imageLink={post.image}
             title={post.title}
-            description={post.text.slice(0, 15)}
+            description={`${post.text.slice(0, 15)}...`}
             name={post.userName}
           />
         ))}
